@@ -14,9 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
             entry.classList.add('timeline-entry');
             entry.setAttribute('id', 'entry-' + index);
     
-            let dot = document.createElement('div');
-            dot.classList.add('timeline-dot');
-    
             let date = document.createElement('div');
             date.textContent = item.date;
             date.classList.add('timeline-date');
@@ -30,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
             let description = document.createElement('p');
             description.textContent = item.description;
-            description.style.display = 'none'; // Initially hide the description
+            description.style.display = 'block'; // Initially show the description
     
             // Click event to toggle the description visibility
             entry.addEventListener('click', function() {
@@ -39,8 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
             content.appendChild(title);
             content.appendChild(description);
-    
-            entry.appendChild(dot);
+
             entry.appendChild(date);
             entry.appendChild(content);
     
