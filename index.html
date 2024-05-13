@@ -1,62 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Interactive Resume - Thomas Glouner</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas Glouner 🔥</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
+    <main>
+        <section>
 
-<div class="resume">
-	
-	<div class="top-section">
-		<div class="headshot-container">
-			<img src="headshot.png" alt="Thomas Pic" class="resume-headshot">
-		</div>
-		<div class="contact-info">
-			<h1>Thomas Glouner</h1>
-			<p>(206)637-5486 | tmglouner@gmail.com</p>
-		</div>
-	</div>
+            <div class="nameContainer">
 
-    <section class="resume-section" id="experience">
-        <h2>Professional Experience</h2>
-        <div id="timeline"></div> <!-- Placeholder for timeline entries -->
-    </section>
+                <h1>Thomas Glouner</h1>
+                <p class="darkerText">Full-Stack Software Engineer</p>
+            </div>
+            
+            <div class="statsContainer">
+                <div class="imgContainer">
+                    <img src="headshot.png" alt="Thomas Pic" class="headshot-img">
+                </div>
+                <div class="stats darkerText">
+                    <div>
+                        <div>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <a href="mailto:tmglouner@gmail.com" class="outreach darkerText">
+                            <p>tmglouner@gmail.com</p>
+                        </a>
+                    </div>
+                    <div>
+                        <div>
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+                        <p>(206)637-5486</p>
+                    </div>
+                    <div>
+                        <div>
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <a class="darkerText" href="https://github.com/tmglouner" target="_blank">GitHub</a>
+                    </div>
+                    <div>
+                        <div>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                        <a class="darkerText" href="https://www.linkedin.com/in/thomasglouner/" target="_blank">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
 
-	<section class="resume-section" id="education">
-		<h2>Education</h2>
-		<ul>
-			<li>
-				<span class="degree">Bachelor of Science in Computer Science</span>
-				<span class="school">Washington State University, 2022</span>
-			</li>
-			<li>
-				<span class="degree">Study Abroad</span>
-				<span class="school">University of Limerick(Ireland), 2019</span>
-			</li>
-		</ul>
-	</section>
+            <p class="aboutMe">Hi, I'm Thomas Glouner, a software engineer who loves building cool things with code. I currently
+                have 1+ years of professional software development experience.
+            </p>
 
+            <div class="skills">
+                <p class="darkerText">Skills</p>
+                <p>
+                    Python, JavaScript, Java, SQL, HTML, CSS, XML,</br>
+                    AWS, Docker, Github
+                </p>
+            </div>
 
-    <section class="resume-section" id="skills">
-        <h2>Skills</h2>
-        <ul>
-			<li>JavaScript</li>
-			<li>Java</li>
-			<li>Python</li>
-			<li>SQL</li>
-			<li>HTML</li>
-			<li>CSS</li>
-			<li>XML</li>
-			<li>AWS</li>
-			<li>Docker</li>
-			<li>Github</li>
-		</ul>
-    </section>
-</div>
+            <div class="education">
+                <p class="darkerText">Education</p>
+                <p class="degree">Bachelor of Science in Computer Science</p>
+                <p class="school">Washington State University, 2022</p>
+            </div>
 
-<script src="scripts.js"></script>
+            <div class="experience">
+                <p class="darkerText">Experience</p>
+                <div class="exp">
+                    <p>Amentum (Contractor for the FAA)</p>
+                    <p class="timeline">March 2023-Present</p>
+                </div>
+                <p class="title">Full-Stack Software Developer</p>
+                <ul>
+                    <li>Developed custom web pages using XML and JavaScript to enhance user efficiency, facilitating seamless data presentation and interaction.</li>
+                    <li>Implemented functionality to connect web applications to SQL databases for data manipulation, including CRUD operations (Create, Read, Update, Delete).</li>
+                    <li>Utilized Java programming to automate email notifications to customers, triggered by database events or scheduled time-based events, enhancing communication and engagement.</li>
+                    <li>Collaborated with cross-functional teams to gather requirements, design solutions, and deliver high-quality software products.</li>
+                    <li>Actively participated in code reviews, debugging sessions, and performance optimization efforts to maintain code quality and improve system reliability.</li>
+                    <li>Received DASHO (Designated Agency Safety and Health Official) Award for building software that improved
+                    the Safety Inspection Team's efficiency by 50%</li>
+                </ul>
+            </div>
+
+            <div class="projects">
+                <p class="darkerText headerText">Projects</p>
+            <div class="projectItem">
+                <div>
+                    <p class="darkerText">Power of Math</p>
+                    <p>A web application(hosted on AWS Amplify) that takes user input and makes a POST request
+                        (utilizing Amazon API Gateway) and executes an AWS Lambda function(with permissions configured 
+                        in AWS Identity and Access Manager) in order to calculate the mathematical answer and return it 
+                        to the user. Additionally, That mathematical answer is stored in an Amazon DynamoDB database</p>
+                    <div class="linkContainer">
+                        <a target="_blank" href="https://github.com/tmglouner/PowerOfMath" class="linkItem">
+                            <div>
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+                            <p class="">GitHub</p>
+                        </a>
+                        <a target="_blank" href="https://main.d5v1fbaye82t2.amplifyapp.com/" class="linkItem">
+                            <div>
+                                <i class="fa-solid fa-bolt"></i>
+                            </div>
+                            <p class="">Live</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="pics">
+                    <img src="powerOfMath.png" alt="powerOfMath-img" style="width: 210px; height: auto;"/>
+                </div>
+            </div>
+            <hr>
+            <div class="projectItem">
+                <div>
+                    <p class="darkerText">CICD Pipeline/React App</p>
+                    <p>This project utilizes github actions to create a CICD pipeline using an AWS EC2 instance and docker.
+                        The web application itself is a simple React app that I run locally using NodeJS and NPM. Additionally, 
+                        I have the React app hosted on AWS Amplify.
+                    </p>
+                    <div class="linkContainer">
+                        <a target="_blank" href="https://github.com/tmglouner/reactjs-app" class="linkItem">
+                            <div>
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+                            <p class="">GitHub</p>
+                        </a>
+                        <a target="_blank" href="https://main.d3hrsc3qify77y.amplifyapp.com" class="linkItem">
+                            <div>
+                                <i class="fa-solid fa-bolt"></i>
+                            </div>
+                            <p class="">Live</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="pics">
+                    <img src="CICD.png" alt="cicd-img" style="width: 210px; height: auto;"/>
+                </div>
+            </div>
+            <hr>
+            <div class="projectItem">
+                <div>
+                    <p class="darkerText">Resume Website</p>
+                    <p>This is a simple web app that displays my resume/CV information.
+                        These static HTML, CSS, and JavaScript files are being hosted in a AWS S3 Bucket.
+                        This S3 bucket is set up for Static Website Hosting. I also created AWS Route 53 
+                        records for thomasglouner.com to route traffic to my website through an AWS 
+                        CloudFront distribution. I then added a Certificate (through AWS Certificate Manager) 
+                        to make my website connection secure</p>
+                    <div class="linkContainer">
+                        <a target="_blank" href="https://github.com/tmglouner/Resume" class="linkItem">
+                            <div>
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+                            <p class="">GitHub</p>
+                        </a>
+                        <a target="_blank" href="https://thomasglouner.com/" class="linkItem">
+                            <div>
+                                <i class="fa-solid fa-bolt"></i>
+                            </div>
+                            <p class="">Live</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="pics">
+                    <img src="website.png" alt="website-img" style="width: 210px; height: auto;"/>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
