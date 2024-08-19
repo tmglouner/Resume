@@ -1,7 +1,7 @@
 # Resume
 This is a simple web app that displays my resume/CV information.<br><br> 
-These static HTML, CSS, and JavaScript files are being hosted in a AWS S3 Bucket:<br>
-<img width="332" alt="Screen Shot 2024-04-22 at 3 13 46 PM" src="https://github.com/tmglouner/Resume/assets/166273662/6d15c69b-edfc-46ea-8b35-ec6169526215">
+These static HTML & CSS files are being hosted in a AWS S3 Bucket:<br>
+<img width="328" alt="Screen Shot 2024-05-13 at 4 48 01 PM" src="https://github.com/tmglouner/Resume/assets/166273662/aafd72f5-5461-4ae1-9463-955fe1d39c12">
 <br><br>
 This S3 bucket is set up for Static Website Hosting:<br>
 <img width="854" alt="Screen Shot 2024-04-22 at 3 13 02 PM" src="https://github.com/tmglouner/Resume/assets/166273662/5e56bee1-e799-4aa1-833d-222bf17abb5f">
