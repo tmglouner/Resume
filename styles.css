@@ -177,6 +177,7 @@ hr {
     align-items: center;
     gap: 14px;
     width: fit-content;
+    margin-top: 10px;
 }
 
 .title {
